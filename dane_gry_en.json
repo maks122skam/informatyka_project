@@ -1,0 +1,88 @@
+{
+  "klasy_postaci": {
+    "wojownik": {
+      "nazwa": "Warrior",
+      "zycie": 100,
+      "max_zycie": 100,
+      "atak": 20,
+      "obrona": 20,
+      "unik": 5,
+      "predokosc": 10,
+      "poziom": 1,
+      "exp": 0,
+      "exp_do_awansu": 20
+    },
+    "mag": {
+      "nazwa": "Mage",
+      "zycie": 70,
+      "max_zycie": 70,
+      "atak": 30,
+      "obrona": 10,
+      "unik": 10,
+      "predokosc": 12,
+      "poziom": 1,
+      "exp": 0,
+      "exp_do_awansu": 20
+    },
+    "lucznik": {
+      "nazwa": "Archer",
+      "zycie": 80,
+      "max_zycie": 80,
+      "atak": 25,
+      "obrona": 12,
+      "unik": 15,
+      "predokosc": 14,
+      "poziom": 1,
+      "exp": 0,
+      "exp_do_awansu": 20
+    }
+  },
+  "potwory": {
+    "nietoperz": {"nazwa": "Bat",      "zycie": 40,  "max_zycie": 40,  "atak": 15, "obrona": 3,  "unik": 12, "predokosc": 14, "exp": 10},
+    "goblin":    {"nazwa": "Goblin",   "zycie": 55,  "max_zycie": 55,  "atak": 18, "obrona": 6,  "unik": 10, "predokosc": 10, "exp": 15},
+    "skeleton":  {"nazwa": "Skeleton", "zycie": 60,  "max_zycie": 60,  "atak": 20, "obrona": 8,  "unik": 8,  "predokosc": 8,  "exp": 20},
+    "zombie":    {"nazwa": "Zombie",   "zycie": 70,  "max_zycie": 70,  "atak": 16, "obrona": 10, "unik": 4,  "predokosc": 6,  "exp": 25},
+    "ork":       {"nazwa": "Orc",      "zycie": 85,  "max_zycie": 85,  "atak": 22, "obrona": 12, "unik": 6,  "predokosc": 8,  "exp": 30},
+    "smok":      {"nazwa": "Dragon",   "zycie": 120, "max_zycie": 120, "atak": 30, "obrona": 15, "unik": 10, "predokosc": 12, "exp": 50}
+  },
+  "teksty": {
+    "awans":           "Congratulations! You leveled up!",
+    "przegrana":       "You lost! Try again!",
+    "wygrana_loch":    "You conquered the dungeon! Congratulations!",
+    "wchodzisz_loch":  "You enter the dungeon (Press Enter)",
+    "drzwi_widok":     "You see 3 doors ahead, choose one",
+    "wybor_drzwi":     "Which door do you choose? (1, 2, 3) ",
+    "brak_drzwi":      "There is no such door, try again!",
+    "brak_klasy":      "There is no such character class!",
+    "wybor_klasy":     "Choose your class (warrior, mage, archer): ",
+    "akcja_walka":     "Choose action: 1 - attack, 2 - heal: ",
+    "zla_akcja":       "Invalid action, try again.",
+    "exp_zdobywasz":   "You gained {ilosc} EXP. You now have {exp} / {exp_do_awansu} EXP.",
+    "nowy_prog_exp":   "New EXP threshold for next level: {prog}",
+    "unikanie":        "{nazwa} dodged the attack!",
+    "zadaje_obrazenia":"{atakujacy} deals {obrazenia} damage to {cel}",
+    "atak_na_ciebie":  "{nazwa} attacked you!",
+    "zycie_status":    "Your HP: {zycie} | Enemy HP: {zycie_przeciwnika}",
+    "leczenie":        "You heal for {ile} HP ({proc}% of max HP).",
+    "pokonal":         "You defeated {nazwa}!",
+    "statystyki_naglowek": "=== Player stats ===",
+    "stat_linia":         "  {nazwa}: {wartosc}"
+  },
+
+  "drzwi": {
+    "1": ["nietoperz", "zombie", "ork"],
+    "2": ["goblin", "smok", "przegrana"],
+    "3": ["skeleton", "smok", "przegrana"]
+  },
+  "nazwy_pol": {
+    "zycie":       "HP",
+    "max_zycie":   "Max HP",
+    "atak":        "Attack",
+    "obrona":      "Defense",
+    "unik":        "Dodge (%)",
+    "predokosc":   "Speed",
+    "poziom":      "Level",
+    "exp":         "EXP",
+    "exp_do_awansu": "EXP to next level"
+  }
+}

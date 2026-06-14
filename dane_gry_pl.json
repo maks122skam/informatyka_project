@@ -1,0 +1,87 @@
+{
+  "klasy_postaci": {
+    "wojownik": {
+      "nazwa": "Wojownik",
+      "zycie": 100,
+      "max_zycie": 100,
+      "atak": 20,
+      "obrona": 20,
+      "unik": 5,
+      "predokosc": 10,
+      "poziom": 1,
+      "exp": 0,
+      "exp_do_awansu": 20
+    },
+    "mag": {
+      "nazwa": "Mag",
+      "zycie": 70,
+      "max_zycie": 70,
+      "atak": 30,
+      "obrona": 10,
+      "unik": 10,
+      "predokosc": 12,
+      "poziom": 1,
+      "exp": 0,
+      "exp_do_awansu": 20
+    },
+    "lucznik": {
+      "nazwa": "Łucznik",
+      "zycie": 80,
+      "max_zycie": 80,
+      "atak": 25,
+      "obrona": 12,
+      "unik": 15,
+      "predokosc": 14,
+      "poziom": 1,
+      "exp": 0,
+      "exp_do_awansu": 20
+    }
+  },
+  "potwory": {
+    "nietoperz": {"nazwa": "Nietoperz", "zycie": 40, "max_zycie": 40, "atak": 15, "obrona": 3, "unik": 12, "predokosc": 14, "exp": 10},
+    "goblin":    {"nazwa": "Goblin",    "zycie": 55, "max_zycie": 55, "atak": 18, "obrona": 6, "unik": 10, "predokosc": 10, "exp": 15},
+    "skeleton":  {"nazwa": "Szkielet",  "zycie": 60, "max_zycie": 60, "atak": 20, "obrona": 8, "unik": 8,  "predokosc": 8,  "exp": 20},
+    "zombie":    {"nazwa": "Zombie",    "zycie": 70, "max_zycie": 70, "atak": 16, "obrona": 10, "unik": 4, "predokosc": 6,  "exp": 25},
+    "ork":       {"nazwa": "Ork",       "zycie": 85, "max_zycie": 85, "atak": 22, "obrona": 12, "unik": 6, "predokosc": 8,  "exp": 30},
+    "smok":      {"nazwa": "Smok",      "zycie": 120, "max_zycie": 120, "atak": 30, "obrona": 15, "unik": 10, "predokosc": 12, "exp": 50}
+  },
+  "teksty": {
+    "awans":           "Gratulacje! Awansowałeś na wyższy poziom!",
+    "przegrana":       "Przegrałeś! Spróbuj ponownie!",
+    "wygrana_loch":    "Pokonałeś loch! Gratulacje!",
+    "wchodzisz_loch":  "Wchodzisz do lochu (Wciśnij Enter)",
+    "drzwi_widok":     "Zobaczysz przed sobą 3 drzwi, wybierz jedne z nich",
+    "wybor_drzwi":     "Które drzwi wybierasz? (1, 2, 3) ",
+    "brak_drzwi":      "Nie ma takich drzwi, spróbuj ponownie!",
+    "brak_klasy":      "Nie ma takiej klasy postaci!",
+    "wybor_klasy":     "Wybierz klasę postaci (wojownik, mag, lucznik): ",
+    "akcja_walka":     "Wybierz akcję: 1 - atak, 2 - leczenie: ",
+    "zla_akcja":       "Niepoprawna akcja, spróbuj ponownie.",
+    "exp_zdobywasz":   "Zdobywasz {ilosc} EXP. Masz teraz {exp} / {exp_do_awansu} EXP.",
+    "nowy_prog_exp":   "Nowy próg EXP do kolejnego poziomu: {prog}",
+    "unikanie":        "{nazwa} unika ataku!",
+    "zadaje_obrazenia":"{atakujacy} zadaje {obrazenia} obrażeń {cel}",
+    "atak_na_ciebie":  "Zaatakował Cię {nazwa}!",
+    "zycie_status":    "Twoje życie: {zycie} | Życie przeciwnika: {zycie_przeciwnika}",
+    "leczenie":        "Leczysz się o {ile} HP ({proc}% maksymalnego życia).",
+    "pokonal":         "Pokonałeś {nazwa}!",
+    "statystyki_naglowek": "=== Statystyki gracza ===",
+    "stat_linia":         "  {nazwa}: {wartosc}"
+  },
+  "drzwi": {
+    "1": ["nietoperz", "zombie", "ork"],
+    "2": ["goblin", "smok", "przegrana"],
+    "3": ["skeleton", "smok", "przegrana"]
+  },
+  "nazwy_pol": {
+    "zycie":       "Życie",
+    "max_zycie":   "Maks. życie",
+    "atak":        "Atak",
+    "obrona":      "Obrona",
+    "unik":        "Unik (%)",
+    "predokosc":   "Prędkość",
+    "poziom":      "Poziom",
+    "exp":         "EXP",
+    "exp_do_awansu": "EXP do awansu"
+  }
+}
