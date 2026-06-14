@@ -1,6 +1,6 @@
 {
   "klasy_postaci": {
-    "wojownik": {
+    "warrior": {
       "nazwa": "Warrior",
       "zycie": 100,
       "max_zycie": 100,
@@ -12,7 +12,7 @@
       "exp": 0,
       "exp_do_awansu": 20
     },
-    "mag": {
+    "mage": {
       "nazwa": "Mage",
       "zycie": 70,
       "max_zycie": 70,
@@ -24,7 +24,7 @@
       "exp": 0,
       "exp_do_awansu": 20
     },
-    "lucznik": {
+    "archer": {
       "nazwa": "Archer",
       "zycie": 80,
       "max_zycie": 80,

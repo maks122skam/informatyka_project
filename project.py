@@ -1,7 +1,6 @@
 ﻿import json
 import math
 import random
-import sys
 import copy
 
 
@@ -14,13 +13,9 @@ lang = input("Wybierz jezyk / Select language ({langs}): ".format(langs=' / '.jo
 if lang not in JEZYKI:
     lang = 'pl'
 
-try:
-    with open(JEZYKI[lang], 'r', ) as f:
+with open(JEZYKI[lang], 'r', encoding='utf-8') as f:
         GRA_DANE = json.load(f)
 
-except FileNotFoundError:
-    print(f"Error: File '{JEZYKI[lang]}' not found!")
-    sys.exit()
 
 TEKSTY = GRA_DANE['teksty']
 NAZWY_POL = GRA_DANE['nazwy_pol']
@@ -65,7 +60,8 @@ def dodaj_exp(gracz, ilosc_exp):
 
 
 def attack(atakujacy, broniacy):
-    """Wykonuje  atak atakującego na broniącego. Sprawdza szansę na unik, 
+    """Wykonuje  atak atakującego na broniącego. 
+    Sprawdza szansę na unik, 
     losuje obrażenia z przedziału [50% ataku, atak] i odejmuje obronę broniącego.
     Zwraca zadane obrażenia (0 jeśli atak został unikiięty)."""
    
@@ -139,9 +135,7 @@ user_choice = input(TEKSTY['wybor_klasy'])
 
 gracz = stworz_gracza(user_choice)
 
-if gracz is None:
-    print(TEKSTY['brak_klasy'])
-    sys.exit()
+
 
 pokaz_statystyki(gracz)
 
